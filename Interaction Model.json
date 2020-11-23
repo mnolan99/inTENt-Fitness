@@ -1,0 +1,663 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "intent fitness",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "getSounds",
+                    "slots": [
+                        {
+                            "name": "sound",
+                            "type": "SOUNDS",
+                            "samples": [
+                                "play {sound} sounds for me",
+                                "i want to listen to {sound} sounds",
+                                "{sound}",
+                                "i want to listen to {sound}",
+                                "i would like to listen to {sound}",
+                                "play {sound} for me",
+                                "play {sound} sounds",
+                                "play {sound}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "play {sound} sounds for me",
+                        "play {sound} sounds",
+                        "play {sound} ",
+                        "play {sound} for me",
+                        "I would like to listen to {sound}",
+                        "relax me",
+                        "I want to listen to {sound}",
+                        "{sound}",
+                        "I want to listen to {sound} sounds"
+                    ]
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.LoopOnIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "can you repeat that again please",
+                        "can you repeat that again",
+                        "repeat that please",
+                        "repeat that",
+                        "can you repeat that",
+                        "can you say that again",
+                        "what",
+                        "what did you say",
+                        "what was that"
+                    ]
+                },
+                {
+                    "name": "AMAZON.ShuffleOnIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.LoopOffIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ShuffleOffIntent",
+                    "samples": []
+                },
+                {
+                    "name": "getMode",
+                    "slots": [
+                        {
+                            "name": "mode",
+                            "type": "MODE",
+                            "samples": [
+                                "i want to {mode}",
+                                "i would like to {mode}",
+                                "{mode}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "i want to {mode}",
+                        "{mode}",
+                        "I would like to {mode}"
+                    ]
+                },
+                {
+                    "name": "getTargetArea",
+                    "slots": [
+                        {
+                            "name": "area",
+                            "type": "AREA",
+                            "samples": [
+                                "i want to exercise my {area}",
+                                "{area} workout",
+                                "i would like to complete a {area} workout",
+                                "i want to complete a {area} workout",
+                                "i want to target {area}",
+                                "i would like to target {area}",
+                                "{area}",
+                                "i want to complete an {area} workout",
+                                "i would like to complete an {area} workout"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "i would like to complete an {area} workout",
+                        "i want to complete an {area} workout",
+                        "i want to exercise my {area}",
+                        "{area} workout",
+                        "i would like to complete a {area} workout",
+                        "i want to complete a {area} workout",
+                        "i want to target {area}",
+                        "i would like to target {area}",
+                        "{area}"
+                    ]
+                },
+                {
+                    "name": "getIntensity",
+                    "slots": [
+                        {
+                            "name": "intensity",
+                            "type": "INTENSITY",
+                            "samples": [
+                                "{intensity} workout",
+                                "i would like to complete a {intensity} workout",
+                                "i would like to complete an {intensity} workour",
+                                "i want to complete a workout",
+                                "i want to complete an {intensity} workout",
+                                "{intensity}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "i want to complete an {intensity} workout",
+                        "i would like to complete an {intensity} workout",
+                        "{intensity} workout",
+                        "i would like to complete a {intensity} workout",
+                        "i want to complete a {intensity} workout",
+                        "{intensity}"
+                    ]
+                },
+                {
+                    "name": "getSoundTypes",
+                    "slots": [],
+                    "samples": [
+                        "what can i listen to ",
+                        "list all the sounds",
+                        "list all sounds",
+                        "what sounds are there",
+                        "what sounds can I listen to"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "SOUNDS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "healing meditation",
+                                "synonyms": [
+                                    "session four",
+                                    "healing "
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "confidence meditation",
+                                "synonyms": [
+                                    "session five",
+                                    "confidence"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wisdom meditation",
+                                "synonyms": [
+                                    "session three",
+                                    "wisdom"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mindfulness of breath",
+                                "synonyms": [
+                                    "session one",
+                                    "breath",
+                                    "mindfulness"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mountain",
+                                "synonyms": [
+                                    "session 2",
+                                    "mountain meditation"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trees",
+                                "synonyms": [
+                                    "tree"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chill",
+                                "synonyms": [
+                                    "chilled",
+                                    "relaxing"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "random"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rain on car",
+                                "synonyms": [
+                                    "raining on a car",
+                                    "rain on a car",
+                                    "raining on car"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rain",
+                                "synonyms": [
+                                    "rain drop",
+                                    "rain drops"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ocean waves",
+                                "synonyms": [
+                                    "ocean wave",
+                                    "waves",
+                                    "ocean"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fire",
+                                "synonyms": [
+                                    "crackling"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "birds",
+                                "synonyms": [
+                                    "bird"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "MODE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "guided breathing",
+                                "synonyms": [
+                                    "10 minute guided breathing",
+                                    "10 minute breathing",
+                                    "breathing"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "meditate",
+                                "synonyms": [
+                                    "ten minute meditate",
+                                    "ten minute meditation",
+                                    "meditating",
+                                    "meditation"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "workout",
+                                "synonyms": [
+                                    "ten minute workout",
+                                    "ten minute exercise",
+                                    "exercise"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "REMINDER",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "meditate",
+                                "synonyms": [
+                                    "relax",
+                                    "meditating",
+                                    "meditation"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "workout",
+                                "synonyms": [
+                                    "exercise"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AREA",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "full body",
+                                "synonyms": [
+                                    "whole body",
+                                    "whole",
+                                    "full"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lower body",
+                                "synonyms": [
+                                    "legs",
+                                    "lower"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "upper body",
+                                "synonyms": [
+                                    "chest",
+                                    "arms",
+                                    "upper"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "INTENSITY",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "vigorous",
+                                "synonyms": [
+                                    "intense",
+                                    "difficult",
+                                    "hard"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "moderate",
+                                "synonyms": [
+                                    "regular",
+                                    "average",
+                                    "medium"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "light",
+                                "synonyms": [
+                                    "easier",
+                                    "easy"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "getSounds",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "sound",
+                            "type": "SOUNDS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1518147732038.1393534478204"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1059701369172.183985370.529286722304"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "getMode",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "mode",
+                            "type": "MODE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.757103645059.1413855593511"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1198761464102.1268688566038.1021182339498"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "getTargetArea",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "area",
+                            "type": "AREA",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1216715640341.1373587319490"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1216715640341.1373587319490.55628938039"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "getIntensity",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "intensity",
+                            "type": "INTENSITY",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1346554512009.601913546176"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1346554512009.601913546176.472635673855"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Slot.Validation.1059701369172.183985370.529286722304",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, I don't know that one. You can choose to listen to sounds such as birds, rain, fire and waves. You can also say random and I will choose a sound for you. What would you like to listen to?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1518147732038.1393534478204",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You can choose to listen to sounds such as birds, rain, fire and waves. You can also say random and I will choose a sound for you. What would you like to listen to?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.757103645059.1413855593511",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You can get started with a quick ten minute workout, unwind with ten minutes of meditation or follow a ten minute guided breathing session. Which will it be?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.61803317158.47237465252",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What would you like to be reminded of?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Great. What message would you like in the reminder?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.61803317158.47237465252",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "The message. {message} will be sent as a reminder"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1350208148512",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sure, I will remind you to {reminder}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1308217539947.242246796500",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "I can remind you to exercise or meditate at this time tomorrow. Which will it be?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1216715640341.1373587319490",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": " You can choose to target your lower body, upper body or complete a full body workout. Which will it be?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1346554512009.601913546176",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You can choose a light, moderate or vigorous workout. Which intensity would you like?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1198761464102.1268688566038.1021182339498",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, I didn't quite get that. You can get started with a quick ten minute workout, unwind with ten minutes of meditation or follow a ten minute guided breathing session. Which will it be?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1346554512009.601913546176.472635673855",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, I don't know that one. You can choose a light, moderate or vigorous workout. Which intensity would you like?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1216715640341.1373587319490.55628938039",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, I don't know that one. You can choose to target your lower body, upper body, or complete a full body workout. Which will it be?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1206992705623.1381860344933.1134428629273",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, I don't know that one. I can remind you to exercise or meditate at this time tomorrow. Which will it be?"
+                    }
+                ]
+            }
+        ]
+    }
+}
